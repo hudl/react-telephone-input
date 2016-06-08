@@ -474,7 +474,7 @@ var ReactTelephoneInput = React.createClass({
 
     var kickoffClasses = classNames({
       'ko-invalid': this.props.errorMessage,
-      'ko-active': this.props.value.substr(str.indexOf(' ')+1) !== '',
+      'ko-active': this.state.formattedNumber.substr(str.indexOf(' ')+1) !== '',
     });
 
     var inputClasses = classNames({
